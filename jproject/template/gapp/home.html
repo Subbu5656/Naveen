@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>gapp</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>japp</title>
+</head>
+<body>
+  <h1><a href="/gapp/game/">cinema</a></h1>
+  <div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>car</th>
+        <th>nomber</th>
+      </tr>
+    </thead>
+    {% for i in deta %}
+    <tbody>
+      <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.car}}</td>
+        <td>{{i.nomber}}</td>
+        <td><a href="/gapp/come/{{i.id}}/">update</a></td>
+        <td><a href="/gapp/delete/{{i.id}}/">delete</a></td>
+      </tr>      
+    </tbody>
+    {% endfor %}
+  </table>
+</div>
+</body>
+</html>
+</body>
+</html>
+
+</body>
+</html>
