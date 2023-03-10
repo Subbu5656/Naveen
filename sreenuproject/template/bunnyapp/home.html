@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bunnyapp</title>
+</head>
+<body>
+	<h1><a href="/bunnyapp/home/">my company details</a></h1>
+	<div class="container">          
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>employe</th>
+        <th>salary</th>
+      </tr>
+    </thead>
+    {% for i in deta %}
+    <tbody>
+      <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.employe}}</td>
+        <td>{{i.salary}}</td>
+        <td><a href="/bunnyapp/home/{{i.id}}/">update</a></td>
+        <td><a href="/bunnyapp/delete/{{i.id}}/">delete</a></td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+</div>
+</body>
+</html>
