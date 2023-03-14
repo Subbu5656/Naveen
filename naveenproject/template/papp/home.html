@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>papp</title>
+</head>
+<body>
+<h1><a href="/papp/game/"> my family </a></h1>
+<div class="container">           
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>persons</th>
+        <th>relation</th>
+      </tr>
+    </thead>
+    {% for i in deta %}
+    <tbody>
+      <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.persons}}</td>
+        <td>{{i.relation}}</td>
+        <td><a href="/papp/delete/{{i.id}}"/> delete</a></td>
+         <td><a href="/papp/game/{{i.id}}/"> update</a></td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+</div>
+</body>
+</html>
+</body>
+</html>

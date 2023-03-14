@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>japp</title>
+</head>
+<body>
+  <h1><a href="/japp/come/">cinema</a></h1>
+  <div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>hero</th>
+        <th>vilan</th>
+      </tr>
+    </thead>
+    {% for i in deta %}
+    <tbody>
+      <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.hero}}</td>
+        <td>{{i.vilan}}</td>
+        <td><a href="/japp/come/{{i.id}}/">update</a></td>
+        <td><a href="/japp/delete/{{i.id}}/">delete</a></td>
+      </tr>      
+    </tbody>
+    {% endfor %}
+  </table>
+</div>
+</body>
+</html>
+</body>
+</html>

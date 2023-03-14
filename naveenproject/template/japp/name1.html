@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>japp</title>
+</head>
+<body>
+	<form action="/japp/update/{{data.id}}/" method="post">
+		{% csrf_token %}
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="{{data.hero}}"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value="{{data.vilan}}"><br><br>
+  <input type="submit" value="UPDATE">
+</form>
+</body>
+</html>
